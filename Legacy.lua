@@ -20,7 +20,7 @@ function Initialized()
         local obj = GameObject.FindByName(entry[1])
         if obj then
             local url = entry[2]
-            loadstring(url, function(success, data, err)
+            loadtexture(url, function(success, tex, err)
                 if success and tex then
                     local mat = Material.Create("Standard")
                     mat.mainTexture = tex
